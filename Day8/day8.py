@@ -1,0 +1,31 @@
+#1
+dog={}
+#2
+dog['name']=''
+dog['color']=''
+dog['breed']=''
+dog['legs']=''
+dog['age']=''
+print(dog)
+#3
+student={'first_name':'','last_name':'','gender':'','age':'','martial_status':'','skills':'1',
+         'country':'','city':'','address':''}
+print(student)
+#4
+print(len(student.keys()))
+#5
+print(type(student['skills']))
+#6
+student['skills']='1,2,3'
+print(student)
+#7
+print(student.keys())
+#8
+print(student.values())
+#9
+print(student.items())
+#10
+student.pop('first_name')
+print(student)
+#11
+del student

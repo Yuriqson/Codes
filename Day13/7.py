@@ -1,0 +1,10 @@
+slope= lambda y2,y1,x2,x1: (y2-y1)/(x2-x1)
+y_interception= lambda slope,x,b: slope*x+b
+a=int(input('Enter y2 value'))
+b=int(input('Enter y1 value'))
+c=int(input('Enter x2 value'))
+d=int(input('Enter x1 value'))
+e=int(input('Enter x value'))
+f=int(input('Enter b value'))
+print('The slope of the linear equation is:',slope(a,b,c,d))
+print('And its y interception is at:',y_interception(slope(a,b,c,d),e,f))

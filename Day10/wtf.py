@@ -1,0 +1,5 @@
+event_results = [{'device': 'prod2261.example.com'}, {'device': 'npbodb253.example.com'}, {'device': 'db221.example.com'}, {'device': 'db219.example.com'}, {'device': 'db209.example.com'}, {'device': 'db243.example.com'}, {'device': 'prod277.example.com'}, {'device': 'prod2228.example.com'}, {'device': 'prod2252.example.com'}, {'device': 'prod2116.example.com'}, {'device': 'prod224.example.com'}, {'device': 'db223.example.com'}, {'device': 'db229.example.com'}, {'device': 'prod2116.example.com'}, {'device': 'db221.example.com'}, {'device': 'db239.example.com'}, {'device': 'npbodb249.example.com'}, {'device': 'db210.example.com'}, {'device': 'db219.example.com'}, {'device': 'db243.example.com'}, {'device': 'prod2210.example.com'}, {'device': 'prod224.example.com'}, {'device': 'npbodb253.example.com'}, {'device': 'npbovwa018.example.com'}, {'device': 'npbovwa018.example.com'}, {'device': 'db221.example.com'}, {'device': 'db243.example.com'}, {'device': 'prod2228.example.com'}]
+
+import collections
+unique_counts = collections.Counter(e['device'] for e in event_results)
+print(unique_counts)
